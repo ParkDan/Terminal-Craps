@@ -1,7 +1,7 @@
 require 'money'
 
 class Die
-	def roll 
+	def roll
 		1+rand(6)
 	end
 
@@ -76,9 +76,6 @@ while !craps
 			break
 		end
 	end
-	if craps
-		break 
-	end
 	puts "Thank you...now rolling...."
 	print_roll.call
 	if roll_sum==7 ||roll_sum==11
@@ -125,7 +122,7 @@ while !craps
 				break
 		else
 			puts "You rolled #{roll_sum}. Please press enter to roll again"
-			a=gets.chomp 		
+			a=gets.chomp
 		end
 	end
 end
